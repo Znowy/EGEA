@@ -4,7 +4,11 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body class="world-map">
+    <img class="image-map" src="~/css/Images/WorldMap.png" usemap="#worldmap" />
+    <map name="worldmap">
+        <area shape="poly"
+              coords="178,250,131,319,140,363,191,382,222,382,238,401,248,395,266,426,285,397,361,394,383,439,387,375,431,350,437,328,510,277,507,258,478,277,456,281,402,303,409,268,355,246"
+              alt="USA" href="@Url.Page("/Privacy")" />
+    </map>
+</body>
